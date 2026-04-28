@@ -1,2 +1,2 @@
 # growtree
-アプリ制作を行う会社
+Official website for GrowTree. We develop and provide learning-support apps.
