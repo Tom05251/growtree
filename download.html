@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Download / Install - Flashcards PC Input</title>
-  <meta name="description" content="Download and install Flashcards PC Input as a PWA from Chrome or Edge.">
+  <title>アプリの使い方 - Flashcards PC Input</title>
+  <meta name="description" content="Flashcards PC Inputの開き方、PCへの追加、デスクトップショートカット作成方法。">
   <style>
     body {
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -59,8 +59,19 @@
       font-weight: 700;
     }
 
+    .button.secondary {
+      background: #f1edff;
+      color: #4b2bbf;
+      border: 1px solid #c9bef5;
+    }
+
     .button:hover {
       background: #3b2198;
+      text-decoration: none;
+    }
+
+    .button.secondary:hover {
+      background: #e4dcff;
       text-decoration: none;
     }
 
@@ -69,6 +80,19 @@
       border-left: 4px solid #4b2bbf;
       border-radius: 8px;
       padding: 16px;
+    }
+
+    .steps {
+      background: #fbfaff;
+      border: 1px solid #ddd7ff;
+      border-radius: 12px;
+      padding: 18px;
+      margin-top: 12px;
+    }
+
+    .steps strong {
+      display: block;
+      margin-bottom: 8px;
     }
 
     .small {
@@ -81,51 +105,66 @@
 <body>
   <main>
     <section class="card">
-      <h1>Flashcards PC Input</h1>
+      <h1>アプリの使い方</h1>
 
       <p>
-        Flashcards PC Input is a PC input app for preparing flashcards and notes.
-        It is provided as a Progressive Web App, so you can open it in Chrome or
-        Edge and install it on your PC like an app.
+        Flashcards PC Inputは、PCでカードやノートを入力し、Androidアプリに渡すZIPを作るためのWebアプリです。
+        ChromeまたはEdgeで開いて、PCにアプリとして追加できます。
       </p>
 
       <div class="notice">
-        This app does not use an EXE, MSI, or MSIX installer. Use Chrome or Edge
-        to open the app and install it as a PWA.
+        EXE、MSI、MSIXのインストーラーは使いません。下のボタンからアプリを開き、
+        ChromeまたはEdgeの機能でPCに追加してください。
       </div>
 
-      <h2>Open App</h2>
+      <h2>アプリを開く</h2>
       <p>
-        Open the app from the button below. If possible, use Chrome or Edge on
-        your PC.
+        まず下のボタンからPC入力アプリを開きます。PCのChromeまたはEdgeで開いてください。
       </p>
       <p>
-        <a class="button" href="https://tom05251.github.io/flashcards-pc-input/">Open Flashcards PC Input</a>
-      </p>
-
-      <h2>Install on Chrome or Edge</h2>
-      <ol>
-        <li>Open Flashcards PC Input in Chrome or Edge.</li>
-        <li>Use the install icon near the address bar, or open the browser menu.</li>
-        <li>Select "Install app" or "Install this site as an app".</li>
-        <li>After installation, start it from the Start menu or desktop shortcut.</li>
-      </ol>
-      <p>
-        The exact menu text may differ depending on your browser and Windows version.
+        <a class="button" href="https://tom05251.github.io/flashcards-pc-input/">PC入力アプリを開く</a>
       </p>
 
-      <h2>Updates</h2>
+      <h2>PCにアプリとして追加</h2>
+      <div class="steps">
+        <strong>おすすめの方法</strong>
+        <ol>
+          <li>上の「PC入力アプリを開く」を押します。</li>
+          <li>アプリ画面の上部にある「PCにアプリとして追加」ボタンを押します。</li>
+          <li>ChromeまたはEdgeの確認画面で「インストール」を押します。</li>
+          <li>次回からスタートメニュー、タスクバー、または作成されたショートカットから開きます。</li>
+        </ol>
+      </div>
+
+      <h2>デスクトップにショートカットを作る</h2>
+      <div class="steps">
+        <strong>インストールボタンが出ない場合はこちらを使ってください</strong>
+        <ol>
+          <li>PC入力アプリをChromeまたはEdgeで開きます。</li>
+          <li>ブラウザ右上のメニューを開きます。</li>
+          <li>Chromeでは「保存して共有」または「その他のツール」から「ショートカットを作成」を選びます。</li>
+          <li>Edgeでは「アプリ」から「このサイトをアプリとしてインストール」を選びます。</li>
+          <li>可能であれば「ウィンドウとして開く」にチェックを入れて作成します。</li>
+        </ol>
+      </div>
+
+      <h2>お気に入りに登録する</h2>
       <p>
-        When a new version is available, the app shows an update notice after it
-        opens. Press "Update now" to save your current input, check for the newest
-        Service Worker, and reload the app.
+        ショートカットを作らない場合でも、アプリを開いたあとに <strong>Ctrl + D</strong> でお気に入り登録してください。
+        次回から迷わず開けます。
       </p>
 
-      <h2>Notes</h2>
+      <h2>更新</h2>
+      <p>
+        新しい版がある場合は、アプリを開いたときに更新が反映されます。うまく反映されない場合は、
+        ブラウザの再読み込みを行ってください。
+      </p>
+
+      <h2>注意</h2>
       <ul>
-        <li>The app checks for the latest version when an internet connection is available.</li>
-        <li>After the first load, the basic app screen can open offline.</li>
-        <li>If you use a shared PC, be careful with locally saved personal data.</li>
+        <li>このアプリはWebアプリです。EXEファイルをダウンロードして実行する方式ではありません。</li>
+        <li>PCに追加する操作はChromeまたはEdgeの機能を使います。</li>
+        <li>共有PCでは、ブラウザ内に保存される入力データの扱いに注意してください。</li>
       </ul>
 
       <h2>Support</h2>
